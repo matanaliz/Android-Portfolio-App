@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private Toast createCustomToast(String text) {
+        /* Used custom toas view example from
+            https://developer.android.com/guide/topics/ui/notifiers/toasts.html */
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.toast_layout,
                 (ViewGroup) findViewById(R.id.toast_layout_root));
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         return toast;
     }
 
+    /* Don't like this onClick listeners, should be more easier way with more code reuse */
     public void runPopularMoviesApp(View view) {
         Toast toast = createCustomToast("Popular Movies app should start!");
         toast.show();
