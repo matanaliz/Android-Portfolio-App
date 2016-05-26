@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private Toast createCustomToast(String text) {
-        /* Used custom toas view example from
+        /* Used custom toast view example from
             https://developer.android.com/guide/topics/ui/notifiers/toasts.html */
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.toast_layout,
